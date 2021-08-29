@@ -1,0 +1,344 @@
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3F0E5;
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666464;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #040403;
+    transition: 1.2s;
+}
+
+
+/* NAVIGATION BAR STYLES */
+
+.nav-container {
+    width: 100%;
+    height: 80px;
+    padding: .5rem .5rem;
+    background-color: transparent;
+    position: relative;
+    z-index: 4;
+}
+
+.nav-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: .5rem .5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.nav-wrapper .logo-container {
+    width: 10%;
+    height: 100%;
+    padding: .5rem .5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container a img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-wrapper .nav-menu {
+    width: 60%;
+    height: 100%;
+    padding: .5rem .5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0F0D0F;
+    text-decoration: none;
+    background: transparent;
+    width: 80px;
+    margin-right: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s;
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -o-transition: transform .3s;
+}
+
+.nav-menu a:hover {
+    transform: translateY(-2px);
+    color: #F2A209;
+    border-bottom: solid 2px #F3DB6B;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+}
+
+
+/* HOME SECTION STYLES */
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(49, 49, 49, 0.2);
+    z-index: 2;
+}
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    background: url("/doc/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 1rem;
+}
+
+.home-content {
+    width: 100%;
+    height: 100%;
+    font-family: Merriweather;
+    padding: 1rem 1rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.text-1 {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    padding: 1rem 1rem;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 250px;
+    color: #0A090A;
+}
+
+.text-2 {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    padding: 1rem 1rem;
+    font-size: 45px;
+    font-weight: 800;
+    color: #0A090A;
+}
+
+.text-3 {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    padding: 1rem 1rem;
+    font-size: 40px;
+    font-weight: 800;
+    color: #0A090A;
+}
+
+.typing {
+    color: #F2A209;
+}
+
+.home-icon {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    position: relative;
+    padding: 1rem 1rem;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.home-icon i {
+    font-size: 80px;
+    color: #F2A209;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -o-transform: translateY(-15px);
+    }
+}
+
+
+/* ABOUT SECTION STYLES */
+
+.about-container {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 1rem;
+    position: absolute;
+    background: transparent;
+    top: 110%;
+}
+
+.about-wrapper {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-left {
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    padding: 1rem 1rem;
+}
+
+.about-left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+}
+
+.about-right {
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    padding: 1rem 1rem;
+}
+
+.about-right .tittle {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: #0A090A;
+    font-family: Merriweather, serif;
+}
+
+.about-right .right-text {
+    font-size: 16px;
+    color: #0A090A;
+    font-family: Poppins, serif;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+
+/* SERVICE SECTION STYLES */
+
+.service-container {
+    width: 100%;
+    height: 100vh;
+    background: red;
+    position: absolute;
+    top: 210%;
+    padding: 1rem 1rem;
+}
+
+.service-wrapper {
+    width: 100%;
+    height: 100%;
+    background: blue;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-content-card {
+    width: 100%;
+    height: 50%;
+    background: green;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service-card {
+    width: 33%;
+    height: 100%;
+    background: pink;
+    padding: 1rem 1rem;
+}
+
+.service-content-card-one {
+    width: 100%;
+    height: 50%;
+    background: yellow;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service-card-one {
+    width: 24.5%;
+    height: 100%;
+    background: violet;
+    padding: 1rem 1rem;
+}
