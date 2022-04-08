@@ -17,20 +17,33 @@
 </head>
 
 <!-- NAVIGATION BAR SECTION STARTS-->
-<div class="nav-container">
-    <div class="nav-wrapper">
-        <div class="logo-container">
-            <a href="index.html"><img src="doc/img/logo.jpg"></a>
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Minor <span id="x">Consultancy</span></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#home" class="nav-link">Welcome</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#service" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#team" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <div class="nav-menu">
-            <a href="#home">Welcome</a>
-            <a href="#about">About</a>
-            <a href="#service">Services</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
-</div>
+    </nav>
+</header>
 <!-- NAVIGATION BAR SECTION ENDS-->
 
 <!-- WELCOME SECTION-->
@@ -51,13 +64,12 @@
 
 <!-- ABOUT SECTION STARTS -->
 <div class="about-container" id="about">
+    <h2 class="title">ABOUT US</h2>
     <div class="about-wrapper">
         <div class="about-left" data-aos="zoom-in" data-aos-duration="2000">
             <img src="doc/img/about.jpg" alt="">
         </div>
         <div class="about-right">
-            <h1 class="tittle">About Us</h1>
-            <br>
             <p class="right-text">
                 The name of the Company is <b>MINOR CONSULTANCY COMPANY LIMITED,</b> and the Registered Office of the Company is situated in the <b>Republic of Tanzania.</b><br> The objects for which the Company is established are:<br> <b> To carry out consultancy services</b>                on information and communication technology, insurance, business, tax management, audit, architecture, research, environment, legal and other related matters.<br> <b>To carry on the business of advisers</b>, consultants, researchers,analysts
                 of whatsoever kind or nature in all branches of trade, commerce and industry.<br>
@@ -71,6 +83,7 @@
 
 <!-- SERVICE SECTION STARTS -->
 <div class="service-container" id="service">
+    <h2 class="title">SERVICES</h2>
     <div class="service-wrapper">
         <div class="service-content-card">
             <div class="content-card" data-aos="zoom-in" data-aos-duration="1000">
@@ -124,6 +137,7 @@
 
 <!-- TEAM SECTION STARTS -->
 <div class="team-container" id="team">
+    <h2 class="title">OUR TEAM</h2>
     <div class="team-wrapper">
         <div class="team-content-card">
             <div class="team-card">
@@ -195,7 +209,7 @@
                         <img src="doc/img/naomi.jpg" alt="">
                         <div>
                             <p class="user_name_two">Naomi Nilla</p>
-                            <p class="skill_two">Manager</p>
+                            <p class="skill_two">Directing Manager</p>
                         </div>
                         <div class="arr_container_two center_two">
                             <i class="fas fa-arrow-right"></i>
@@ -290,6 +304,90 @@
         </div>
     </div>
 </div>
+<!-- TEAM SECTION ENDS -->
+
+<!-- CONTACT SECTION STARTS -->
+<section class="contact-container" id="contact">
+    <h2 class="title">CONTACT US</h2>
+    <div class="contact-container-wrapper">
+        <div class="contact-content row">
+            <div class="contact-cards">
+                <div class="contact-form" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="form-header">
+                        <h2 class="form-title">Get in touch</h2>
+                    </div>
+                    <form action="" method="POST" autocomplete="off">
+                        <input type="text" name="fname" placeholder="Enter your full name" required>
+                        <br>
+                        <input type="email" name="mail" placeholder="Enter your email" required>
+                        <br>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <br>
+                        <textarea type="text" rows="5" cols="50" maxlength="300" placeholder="Enter your message here"></textarea>
+                        <br>
+                        <input type="hidden" name="hidden" autocomplete="false">
+                        <button type="submit" name="send" value="submit">SUBMIT</button>
+                    </form>
+                </div>
+                <div class="social-bar">
+
+                    <div class="icon-wrapper">
+                        <a href="https://web.facebook.com/NillahWeb/?_rdc=1&_rdr" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/_nillah" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/_black_titan/" class="fa fa-instagram"></a>
+                        <a href="https://github.com/kui-nillah" class="fa fa-github"></a>
+                        <a href="https://www.linkedin.com/in/godwin-nillah-600752216/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-cards bottom">
+                <div class="sub-cards">
+                    <div class="sub-cards-icon">
+                        <img src="doc/img/location.svg">
+                    </div>
+                    <div class="sub-cards-desc">
+                        <h3 class="sub-title">Address.</h3><br>
+                        <p class="sub-text">Dar es salaam, Tanzania.</p>
+                    </div>
+                </div>
+                <div class="sub-cards">
+                    <div class="sub-cards-icon">
+                        <img src="doc/img/call.svg">
+                    </div>
+                    <div class="sub-cards-desc">
+                        <h3 class="sub-title">Mobile number.</h3><br>
+                        <p class="sub-text">+255 62 426 1151.</p>
+                    </div>
+                </div>
+                <div class="sub-cards">
+                    <div class="sub-cards-icon">
+                        <img src="doc/img/email.svg" alt="">
+                    </div>
+                    <div class="sub-cards-desc">
+                        <h3 class="sub-title">Email address.</h3><br>
+                        <p class="sub-text">frankmahona@gmail.com</p>
+                    </div>
+                </div>
+                <div class="sub-cards">
+                    <div class="sub-cards-icon">
+                        <img src="doc/img/clock.svg" alt="">
+                    </div>
+                    <div class="sub-cards-desc">
+                        <h3 class="sub-title">Working hours</h3><br>
+                        <p class="sub-text">8:00AM - 16:00PM(MON - SAT)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTACT SECTION ENDS -->
+
+<!-- FOOTER SECTION STARTS-->
+<footer>
+    <span>Created By <a href="#">Black Titan</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+</footer>
+<!-- FOOTER SECTION ENDS -->
 
 <body>
 
